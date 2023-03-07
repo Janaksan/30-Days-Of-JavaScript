@@ -12,7 +12,7 @@ let isUndefined;
 //null
 const isNull = null;
 
-//output
+//Create datatypes.js file and use the JavaScript typeof operator to check different data types. Check the data type of each variable
 
 console.log([
   {
@@ -32,3 +32,28 @@ console.log([
     type: typeof isNull,
   },
 ]);
+
+// 6. Declare four variables without assigning values
+
+let test_1;
+let test_2;
+let test_3;
+let test_4;
+
+test_1 = "some";
+
+console.log(test_1, test_2, test_3, test_4);
+
+// 7.Declare four variables with assigned values
+
+let firstName = "Krish";
+let lastName = "Janakshan";
+let age = 30;
+let isMale = true;
+
+console.log({
+  firstName,
+  lastName,
+  age,
+  isMale,
+});
