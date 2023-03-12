@@ -66,8 +66,14 @@ let firstNameSome = "Janaksan",
 
 // 10.Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
 let myAge = 25;
-let yourAge = 30;
+let `yourAge` = 30;
 
 let result = ` I am ${myAge} years old. You are ${yourAge} years old.`;
 
 console.log("result :>> ", result);
+
+const sym2 = Symbol("foo");
+
+console.log(sym2);
+
+
