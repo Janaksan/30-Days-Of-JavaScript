@@ -331,12 +331,13 @@ const mtCountries = [
   "Canada",
   "Denmark",
   "Ethiopia",
+  "Kenya",
   "Finland",
   "Germany",
   "Hungary",
   "Ireland",
   "Japan",
-  "Kenya",
+  "Sri Lanka",
 ];
 
 let mtCountriesNew = [];
@@ -513,3 +514,90 @@ for (normalArr of normalArrs) {
   }
 }
 console.log("reverseArray", reverseArray);
+
+// 16. Print all the elements of array as shown below.
+const fullStack = [
+  ["HTML", "CSS", "JS", "React"],
+  ["Node", "Express", "MongoDB"],
+];
+
+for (full of fullStack) {
+  for (mFull of full) {
+    console.log(mFull);
+  }
+}
+
+// Exercises: Level 3
+// 01. Copy countries array(Avoid mutation)
+const muCou = [];
+for (mt of mtCountries) {
+  muCou.push(mt);
+}
+console.log("muCou", muCou);
+
+// 02.Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries
+let sortedCountries = [];
+
+sortedCountries = mtCountries.sort();
+console.log("muCou", sortedCountries);
+
+// 03.Sort the webTechs array and mernStack array
+
+console.log("webTechs", webTechs.sort());
+console.log("tecjhs", tecjhs.sort());
+
+// 04.Extract all the countries contain the word 'land' from the countries array and print it as array
+let landA = [];
+
+for (lalala of mtCountries) {
+  if (lalala.includes("land")) {
+    landA.push(lalala);
+  }
+}
+console.log("landA", landA);
+
+// 05.Find the country containing the hightest number of characters in the countries array
+let hNo = "";
+let mx = 0;
+for (lalala of mtCountries) {
+  if (lalala.length > mx) {
+    mx = lalala.length;
+    hNo = lalala;
+  }
+}
+
+console.log("hNo", hNo);
+
+// 06.
+
+// 07.Extract all the countries containing only four characters from the countries array and print it as array
+let onlyFourLetterCountries = [];
+
+for (country of mtCountries) {
+  if (country.length === 5) {
+    onlyFourLetterCountries.push(country);
+  }
+}
+
+console.log("onlyFourLetterCountries", onlyFourLetterCountries);
+
+// 08.Extract all the countries containing two or more words from the countries array and print it as array
+let filCountry = [];
+for (country of mtCountries) {
+  if (country.split(" ").length >= 2) {
+    filCountry.push(country);
+  }
+}
+
+console.log("filCountry", filCountry);
+
+// 9. Reverse the countries array and capitalize each country and stored it as an array
+let mainCountryData = mtCountries;
+let reverseCountry = mainCountryData.reverse();
+
+let myNewCoun = [];
+for (reverseCou of reverseCountry) {
+  myNewCoun.push(reverseCou.toUpperCase());
+}
+
+console.log("reverseCou", myNewCoun.sort());
